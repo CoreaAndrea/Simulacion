@@ -35,8 +35,8 @@ public class prueba2 {
 
             String textoEsperado = "Kiara";
             String textoReal = usuarioVisible.getText();
-
-            assertEquals(textoEsperado, textoReal);
+            // por si no se muestra el nombre del usuario en el icono de registro
+            assertEquals("El nombre de usuario mostrado no coincide con el esperado.", textoEsperado, textoReal);
     }
 
     @After

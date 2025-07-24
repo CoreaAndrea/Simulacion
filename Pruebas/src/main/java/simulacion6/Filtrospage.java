@@ -5,6 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static org.junit.Assert.assertFalse;
+
 import java.time.Duration;
 import java.util.List;
 
@@ -73,6 +75,7 @@ public class Filtrospage {
         } else {
             System.out.println("No se encontraron productos luego de aplicar los filtros.");
         }
+        assertFalse("No se encontraron productos luego de aplicar el filtro.", productos.isEmpty());
      }
 }
 

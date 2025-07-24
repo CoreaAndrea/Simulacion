@@ -33,7 +33,7 @@ public class ProductoTest {
         System.out.println("OS: " + os);
         System.out.println("Processor: " + processor);
         
-        //Aqui se validan 
+        //Aqui se validan si los datos son los mismos
         assertEquals("Display no coincide", "11.6\" diagonal FHD BrightView eDP ultra-slim LED-backlit touch screen (1920 x 1080)", display);
         assertEquals("Graphics no coincide", "Intel® HD Graphics 5300", graphics);
         assertEquals("Memory no coincide", "8 GB 1600 MHz LPDDR3 SDRAM (onboard)", memory);
