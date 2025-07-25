@@ -61,7 +61,9 @@ public class Filtrospage {
     public void aplicarFiltroColor() {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("accordionColor"))).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.id("productsColors414141"))).click();
+        
     }
+    
     public void validarProductosFiltrados() throws InterruptedException {
         Thread.sleep(2000); 
 

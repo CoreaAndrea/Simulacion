@@ -27,13 +27,13 @@ public class prueba2 {
 
     @Test
     public void testLogin() throws InterruptedException {
-        loginPage.login("Kiara", "Solead02");
+        loginPage.login("Angela", "Solead02");
         
         WebElement usuarioVisible = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector("#menuUserLink > span.hi-user")
             ));
 
-            String textoEsperado = "Kiara";
+            String textoEsperado = "Angela";
             String textoReal = usuarioVisible.getText();
             // por si no se muestra el nombre del usuario en el icono de registro
             assertEquals("El nombre de usuario mostrado no coincide con el esperado.", textoEsperado, textoReal);

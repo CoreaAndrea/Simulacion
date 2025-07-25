@@ -24,11 +24,11 @@ public class registroUsuario extends Basepage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("usernameRegisterPage")));
 
-        driver.findElement(By.name("usernameRegisterPage")).sendKeys("Angel");
-        driver.findElement(By.name("emailRegisterPage")).sendKeys("Angel@email.com");
+        driver.findElement(By.name("usernameRegisterPage")).sendKeys("Angela");
+        driver.findElement(By.name("emailRegisterPage")).sendKeys("angela@email.com");
         driver.findElement(By.name("passwordRegisterPage")).sendKeys("Solead02");
         driver.findElement(By.name("confirm_passwordRegisterPage")).sendKeys("Solead02");
-        driver.findElement(By.name("first_nameRegisterPage")).sendKeys("Angel");
+        driver.findElement(By.name("first_nameRegisterPage")).sendKeys("Angela");
         driver.findElement(By.name("last_nameRegisterPage")).sendKeys("Lopez");
         driver.findElement(By.name("phone_numberRegisterPage")).sendKeys("88889999");
 
@@ -48,7 +48,7 @@ public class registroUsuario extends Basepage {
                 By.cssSelector("#menuUserLink > span.hi-user")
             ));
 
-            String textoEsperado = "Angel";
+            String textoEsperado = "Angela";
             String textoReal = usuarioVisible.getText();
 
             assertEquals("El nombre de usuario no coincide con el esperado.", textoEsperado, textoReal);
